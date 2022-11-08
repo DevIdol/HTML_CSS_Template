@@ -347,6 +347,7 @@ p {
   cursor: pointer;
   margin-right: 15px;
 }
+
 .sec-blogs .arrow-btn img:nth-child(2) {
   margin-left: 15px;
 }
@@ -357,17 +358,19 @@ p {
 
 /* Footer
 ==========  */
-.sec-footer{
+.sec-footer {
   background-color: #2b2a2a;
 }
 
-.sec-footer .site-info{
+.sec-footer .site-info {
   padding: 40px 0px;
 }
-.sec-footer .footer-title{
+
+.sec-footer .footer-title {
   text-align: center;
 }
-.sec-footer p{
+
+.sec-footer p {
   width: 370px;
   margin: 0 auto;
   padding-top: 44px;
@@ -376,10 +379,11 @@ p {
   color: #fff;
 }
 
-.copyright-block{
+.copyright-block {
   background-color: #252525;
 }
-.copyright-block p{
+
+.copyright-block p {
   width: 100%;
   text-align: center;
   padding: 37px 0px 38px;
