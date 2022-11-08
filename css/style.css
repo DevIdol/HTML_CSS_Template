@@ -1,0 +1,387 @@
+@font-face {
+  font-family: "arial";
+  font-weight: 400;
+  src: url("../fonts/arial.ttf");
+}
+
+@font-face {
+  font-family: "JuliusSansOne";
+  font-weight: 400;
+  src: url("../fonts/JuliusSansOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  font-weight: 400;
+  src: url("../fonts/MyriadPro-Regular.otf");
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "JuliusSansOne", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  font-family: "MyriadPro-Regular";
+  text-decoration: none;
+  outline: none;
+  display: block;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+a:hover {
+  transition: 0.6s ease;
+  opacity: 0.8;
+}
+
+.sec-inner {
+  max-width: 1281px;
+  margin: 0 auto;
+}
+
+.sec-title {
+  color: #363636;
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sec-btn {
+  background-color: #363636;
+  width: 312px;
+  padding: 22px 10px 17px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sec-btn:hover {
+  background-color: #ffffff;
+  color: #363636;
+  border: 1px solid #363636;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family: "arial", sans-serif;
+  line-height: 27.2px;
+  color: #363636;
+}
+
+/* Mainvisual Section
+====================== */
+.sec-mv {
+  position: relative;
+  padding: 35px 0 108px;
+  background: url("../img/mv_bg_img.png") no-repeat center/cover;
+}
+
+.sec-mv .header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  padding: 35px 0 23px;
+  margin-bottom: 95px;
+}
+
+.sec-mv .header .header-logo {
+  position: absolute;
+  top: 0;
+  float: left;
+}
+
+.sec-mv .header .gnav {
+  float: right;
+}
+
+.sec-mv .header .gnav li {
+  float: left;
+  margin-right: 54px;
+}
+
+.sec-mv .header .gnav li:last-child {
+  margin-right: 0;
+}
+
+.sec-mv .header .gnav li a {
+  color: #363636;
+  padding-bottom: 8px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+}
+
+.sec-mv .header .gnav li a:hover,
+.sec-mv .header .gnav li a.active {
+  transition: 0.5 ease;
+  border-bottom: 1px solid #ccc;
+}
+
+.sec-mv .mv-ctn .ctn-txt {
+  width: 606px;
+  padding: 59px 68px 78px;
+  border: 5px solid #ebebeb;
+}
+
+.sec-mv .mv-ctn .ctn-txt .sec-title {
+  font-size: 32.84px;
+  text-align: start;
+}
+
+.sec-mv .mv-ctn .ctn-txt p {
+  color: #808080;
+  padding-top: 18px;
+  font-size: 14.28px;
+  line-height: 22.85px;
+}
+
+/* Book  A Table Section
+========================== */
+.sec-book-tbl {
+  margin-top: 60px;
+}
+
+.sec-book-tbl .fruits-img {
+  float: left;
+}
+
+.sec-book-tbl .ctn-txt {
+  width: 451px;
+  float: right;
+}
+
+.sec-book-tbl .ctn-txt .sec-title {
+  font-size: 35px;
+  text-align: start;
+}
+
+.sec-book-tbl .ctn-txt .book-tbl-desc {
+  margin-top: 34px;
+  padding-bottom: 45px;
+}
+
+.sec-book-tbl .ctn-txt .book-tbl-desc p:last-child {
+  padding-top: 34px;
+}
+
+/* Our Speciality Menu Section
+================================ */
+.sec-menu {
+  margin-top: 80px;
+}
+
+.sec-menu .underline {
+  position: relative;
+  text-align: center;
+}
+
+.sec-menu .underline::before {
+  content: "";
+  display: block;
+  width: 442px;
+  height: 2px;
+  background: #363636;
+  position: absolute;
+  left: 108px;
+  top: 50%;
+}
+
+.sec-menu .underline::after {
+  content: "";
+  display: block;
+  width: 442px;
+  height: 2px;
+  background: #363636;
+  position: absolute;
+  right: 108px;
+  top: 50%;
+}
+
+.sec-menu .sec-title {
+  padding-top: 40px;
+}
+
+.sec-menu .menu-list {
+  margin-top: 84px;
+}
+
+.sec-menu .menu-list li {
+  float: left;
+  width: 604px;
+  margin: 0px 70px 40px 0px;
+}
+
+.sec-menu .menu-list li:nth-child(2),
+.sec-menu .menu-list li:nth-child(4),
+.sec-menu .menu-list li:nth-child(6) {
+  margin-right: 0px;
+}
+
+.sec-menu .menu-list li img {
+  float: left;
+  margin-right: 30px;
+}
+
+.sec-menu .menu-list .sec-title {
+  padding-top: 0;
+  font-size: 28px;
+  text-align: start;
+}
+
+.sec-menu .menu-list p {
+  padding-top: 18px;
+  line-height: 30.15px;
+}
+
+.sec-menu .menu-list a {
+  margin: 0 auto;
+}
+
+/* Meet Our Experienced Chefs Section
+======================================= */
+.sec-chefs {
+  margin-top: 80px;
+  padding-bottom: 40px;
+  background: url("../img/chefs_bg_img.png") no-repeat center/cover;
+}
+
+.sec-chefs .sec-title {
+  padding: 45px 0;
+}
+
+.sec-chefs .chef-list .sec-title {
+  font-size: 28px;
+  padding: 40px 0px 0px;
+  line-height: 21.83px;
+}
+
+.sec-chefs .chef-list .sec-title span {
+  font-size: 18px;
+}
+
+.sec-chefs ul li {
+  float: left;
+  width: 375px;
+  margin-right: 75px;
+  text-align: center;
+}
+
+.sec-chefs ul li:nth-child(3) {
+  margin-right: 0;
+}
+
+.sec-chefs ul li p {
+  padding-top: 40px;
+  line-height: 25.46px;
+}
+
+/* Read our blogs Section
+=========================== */
+.sec-blogs {
+  background: url("../img/blogs_right_bg_img.png") no-repeat top right;
+  padding-top: 106px;
+}
+
+.sec-blogs-bg {
+  background: url("../img/blogs_left_bg_img.png") no-repeat bottom left;
+  padding-bottom: 80px;
+}
+
+.sec-blogs .sec-title {
+  padding-bottom: 40px;
+}
+
+.sec-blogs .blog-list li {
+  float: left;
+  margin-right: 75px;
+  position: relative;
+}
+
+.sec-blogs .blog-list li:nth-child(3) {
+  margin-right: 0;
+}
+
+.sec-blogs .blog-list li .sec-title {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  width: 100%;
+  padding: 8px 45px 9px 46px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #636363cc;
+}
+
+.sec-blogs .arrow-btn {
+  margin-top: 40px;
+}
+
+.sec-blogs .arrow-btn {
+  text-align: center;
+}
+
+.sec-blogs .arrow-btn img {
+  background-color: #736357;
+  padding: 14px 46px 13px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.sec-blogs .arrow-btn img:nth-child(2) {
+  margin-left: 15px;
+}
+
+.sec-blogs .arrow-btn img:hover {
+  background-color: #363636;
+}
+
+/* Footer
+==========  */
+.sec-footer{
+  background-color: #2b2a2a;
+}
+
+.sec-footer .site-info{
+  padding: 40px 0px;
+}
+.sec-footer .footer-title{
+  text-align: center;
+}
+.sec-footer p{
+  width: 370px;
+  margin: 0 auto;
+  padding-top: 44px;
+  text-align: center;
+  line-height: 25.46px;
+  color: #fff;
+}
+
+.copyright-block{
+  background-color: #252525;
+}
+.copyright-block p{
+  width: 100%;
+  text-align: center;
+  padding: 37px 0px 38px;
+  margin: 0;
+}
