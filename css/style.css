@@ -92,7 +92,7 @@ p {
 .sec-mv {
   position: relative;
   padding: 35px 0 108px;
-  background: url("../img/mv_bg_img.png") no-repeat center/cover;
+  background: url("../img/img_mv_bg.png") no-repeat center/cover;
 }
 
 .sec-mv .header {
@@ -105,7 +105,6 @@ p {
 .sec-mv .header .header-logo {
   position: absolute;
   top: 0;
-  float: left;
 }
 
 .sec-mv .header .gnav {
@@ -131,7 +130,7 @@ p {
 
 .sec-mv .header .gnav li a:hover,
 .sec-mv .header .gnav li a.active {
-  transition: 0.5 ease;
+  transition: 0.5s ease;
   border-bottom: 1px solid #ccc;
 }
 
@@ -193,17 +192,7 @@ p {
   text-align: center;
 }
 
-.sec-menu .underline::before {
-  content: "";
-  display: block;
-  width: 442px;
-  height: 2px;
-  background: #363636;
-  position: absolute;
-  left: 108px;
-  top: 50%;
-}
-
+.sec-menu .underline::before,
 .sec-menu .underline::after {
   content: "";
   display: block;
@@ -211,8 +200,15 @@ p {
   height: 2px;
   background: #363636;
   position: absolute;
-  right: 108px;
   top: 50%;
+}
+
+.sec-menu .underline::before {
+  left: 108px;
+}
+
+.sec-menu .underline::after {
+  right: 108px;
 }
 
 .sec-menu .sec-title {
@@ -236,8 +232,14 @@ p {
 }
 
 .sec-menu .menu-list li img {
+  width: 170px;
   float: left;
   margin-right: 30px;
+}
+
+.sec-menu .menu-list .menu-content {
+  width: 402px;
+  float: right;
 }
 
 .sec-menu .menu-list .sec-title {
@@ -296,12 +298,12 @@ p {
 /* Read our blogs Section
 =========================== */
 .sec-blogs {
-  background: url("../img/blogs_right_bg_img.png") no-repeat top right;
+  background: url("../img/img_blogs_right_bg.png") no-repeat top right;
   padding-top: 106px;
 }
 
 .sec-blogs-bg {
-  background: url("../img/blogs_left_bg_img.png") no-repeat bottom left;
+  background: url("../img/img_blogs_left_bg.png") no-repeat bottom left;
   padding-bottom: 80px;
 }
 
@@ -337,15 +339,24 @@ p {
   margin-top: 40px;
 }
 
-.sec-blogs .arrow-btn {
-  text-align: center;
+.sec-blogs .arrow-btn a {
+  text-align: right;
+  width: 49%;
+  float: left;
 }
 
-.sec-blogs .arrow-btn img {
-  background-color: #736357;
+.sec-blogs .arrow-btn a:last-child {
+  text-align: left;
+  width: 49%;
+  float: right;
+}
+
+.sec-blogs .arrow-btn a img {
+  background-color: #d5d0cc;
   padding: 14px 46px 13px;
   cursor: pointer;
   margin-right: 15px;
+  transition: 0.5s ease;
 }
 
 .sec-blogs .arrow-btn img:nth-child(2) {
@@ -360,6 +371,7 @@ p {
 ==========  */
 .sec-footer {
   background-color: #2b2a2a;
+  text-align: center;
 }
 
 .sec-footer .site-info {
@@ -367,14 +379,13 @@ p {
 }
 
 .sec-footer .footer-title {
-  text-align: center;
+  display: inline-block;
 }
 
 .sec-footer p {
   width: 370px;
   margin: 0 auto;
   padding-top: 44px;
-  text-align: center;
   line-height: 25.46px;
   color: #fff;
 }
@@ -385,7 +396,6 @@ p {
 
 .copyright-block p {
   width: 100%;
-  text-align: center;
   padding: 37px 0px 38px;
   margin: 0;
 }
