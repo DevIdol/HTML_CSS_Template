@@ -174,7 +174,9 @@ select {
   display: table;
 }
 
-.clearfix:after {
+.clearfix::after {
+  display: block;
+  content: "";
   clear: both;
 }
 
